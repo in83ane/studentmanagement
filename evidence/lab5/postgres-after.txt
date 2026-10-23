@@ -1,0 +1,7 @@
+-[ RECORD 1 ]+-------------------------------------
+id           | 23
+student_code | 66006005
+name         | ronnakorn muangkan Lab5
+major        | Computer Science
+client_id    | 2c980036-828d-46a5-8343-13f8d863113b
+

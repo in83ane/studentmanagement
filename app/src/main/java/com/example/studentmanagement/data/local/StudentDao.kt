@@ -1,28 +1,34 @@
 package com.example.studentmanagement.data.local
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import androidx.room.Update
-import com.example.studentmanagement.model.Student
+import androidx.room.*
+import com.example.studentmanagement.data.local.StudentEntity
+import kotlinx.coroutines.flow.Flow
 
-// Data Layer: Room Data Access Object (DAO) for local DB operations
 @Dao
 interface StudentDao {
-    @Query("SELECT * FROM students")
-    suspend fun getAllStudents(): List<Student>
-
+    @Query("SELECT * FROM students ORDER BY name")
+    fun observeStudents(): Flow<List<StudentEntity>>
+    @Query("SELECT * FROM students ORDER BY name")
+    suspend fun getAllStudents(): List<StudentEntity>
+    @Query("SELECT * FROM students WHERE syncStatus IN ('PENDING', 'FAILED') ORDER BY id")
+    suspend fun getPendingStudents(): List<StudentEntity>
     @Query("SELECT * FROM students WHERE id = :id LIMIT 1")
-    suspend fun getStudentById(id: Int): Student?
+    suspend fun getStudentById(id: Int): StudentEntity?
+    @Insert(onConflict = OnConflictStrategy.ABORT)
+    suspend fun insertStudent(student: StudentEntity)
+    @Update suspend fun updateStudent(student: StudentEntity)
+    @Delete suspend fun deleteStudent(student: StudentEntity)
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertStudent(student: Student)
-
-    @Update
-    suspend fun updateStudent(student: Student)
-
-    @Delete
-    suspend fun deleteStudent(student: Student)
+    // Merge by server identity; never clear pending/failed local work during refresh.
+    @Transaction
+    suspend fun mergeRemote(remote: List<StudentEntity>) {
+        val local = getAllStudents()
+        for (item in remote) {
+            val existing = local.firstOrNull { it.serverId == item.serverId || it.clientId == item.clientId }
+            if (existing == null) insertStudent(item.copy(id = 0))
+            else if (existing.syncStatus == "SYNCED") updateStudent(item.copy(id = existing.id, clientId = existing.clientId))
+        }
+        val serverIds = remote.map { it.serverId }.toSet()
+        local.filter { it.syncStatus == "SYNCED" && it.serverId !in serverIds }.forEach { deleteStudent(it) }
+    }
 }

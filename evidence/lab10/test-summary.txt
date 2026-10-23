@@ -1,0 +1,7 @@
+Lab 10 verification — 24 October 2026
+com.example.studentmanagement.UseCaseTest: 6 tests, 0 failures, 0 errors
+com.example.studentmanagement.StepProgressTest: 2 tests, 0 failures, 0 errors
+com.example.studentmanagement.StudentRepositoryTest: 6 tests, 0 failures, 0 errors
+com.example.studentmanagement.StudentViewModelTest: 1 tests, 0 failures, 0 errors
+TOTAL: 15 passed
+BUILD SUCCESSFUL

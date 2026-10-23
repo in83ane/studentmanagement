@@ -1,0 +1,5 @@
+com.example.studentmanagement.UseCaseTest: tests=6, failures=0, errors=0
+com.example.studentmanagement.StepProgressTest: tests=2, failures=0, errors=0
+com.example.studentmanagement.StudentRepositoryTest: tests=6, failures=0, errors=0
+com.example.studentmanagement.StudentViewModelTest: tests=1, failures=0, errors=0
+BUILD SUCCESSFUL

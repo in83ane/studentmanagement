@@ -1,29 +1,25 @@
 package com.example.studentmanagement.data.remote
 
+import android.util.Log
+import com.example.studentmanagement.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-// Data Layer: Retrofit Client configuration (singleton)
 object RetrofitClient {
-    // Keep BASE_URL as one constant so it can be changed easily
-    private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
-
-    private val loggingInterceptor = HttpLoggingInterceptor().apply {
-        level = HttpLoggingInterceptor.Level.BODY
-    }
-
-    private val okHttpClient = OkHttpClient.Builder()
-        .addInterceptor(loggingInterceptor)
-        .build()
-
-    val api: StudentApi by lazy {
-        Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .client(okHttpClient)
-            .addConverterFactory(GsonConverterFactory.create())
+    private const val BASE_URL = "http://10.0.2.2:8000/"
+    fun create(storage: TokenStorage): Retrofit {
+        val logging = HttpLoggingInterceptor { message -> Log.d("Lab3Http", message) }.apply {
+            // Never log request/response bodies: login bodies contain credentials and JWTs.
+            redactHeader("Authorization")
+            level = if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.HEADERS else HttpLoggingInterceptor.Level.NONE
+        }
+        val client = OkHttpClient.Builder()
+            .addInterceptor(AuthInterceptor(storage))
+            .addInterceptor(logging)
             .build()
-            .create(StudentApi::class.java)
+        return Retrofit.Builder().baseUrl(BASE_URL).client(client)
+            .addConverterFactory(GsonConverterFactory.create()).build()
     }
 }

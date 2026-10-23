@@ -1,0 +1,5 @@
+ id | student_code |          name           |      major       |              client_id               
+----+--------------+-------------------------+------------------+--------------------------------------
+ 17 | 66006004     | ronnakorn muangkan Lab4 | Computer Science | d3ad850b-0a9f-46e3-a8cb-40b8ad172262
+(1 row)
+

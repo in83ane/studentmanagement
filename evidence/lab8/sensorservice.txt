@@ -1,0 +1,390 @@
+Captured at: 19:20:16.886
+Sensor Device:
+Total 12 h/w sensors, 12 running 0 disabled clients:
+0x00000000) active-count = 3; sampling_period(ms) = {66.7, 200.0, 66.7}, selected = 66.67 ms; batching_period(ms) = {0.0, 2000.0, 100.0}, selected = 0.00 ms
+Sensor List:
+0000000000) Goldfish 3-axis Accelerometer | The Android Open Source Project | ver: 1 | type: android.sensor.accelerometer(1) | perm: n/a | flags: 0x00000050
+	continuous | minRate=2.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | data-injection, has-additional-info, 
+0x00000001) Goldfish 3-axis Gyroscope | The Android Open Source Project | ver: 1 | type: android.sensor.gyroscope(4) | perm: n/a | flags: 0x00000050
+	continuous | minRate=2.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | data-injection, has-additional-info, 
+0x00000002) Goldfish 3-axis Magnetic field sensor | The Android Open Source Project | ver: 1 | type: android.sensor.magnetic_field(2) | perm: n/a | flags: 0x00000010
+	continuous | minRate=2.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | data-injection, 
+0x00000003) Goldfish Orientation sensor | The Android Open Source Project | ver: 1 | type: android.sensor.orientation(3) | perm: n/a | flags: 0x00000010
+	continuous | minRate=2.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | data-injection, 
+0x00000004) Goldfish Ambient Temperature sensor | The Android Open Source Project | ver: 1 | type: android.sensor.ambient_temperature(13) | perm: n/a | flags: 0x00000012
+	on-change | maxDelay=0us | minDelay=0us | no batching | non-wakeUp | data-injection, 
+0x00000005) Goldfish Proximity sensor | The Android Open Source Project | ver: 1 | type: android.sensor.proximity(8) | perm: n/a | flags: 0x00000013
+	on-change | maxDelay=0us | minDelay=0us | no batching | wakeUp | data-injection, 
+0x00000006) Goldfish Light sensor     | The Android Open Source Project | ver: 1 | type: android.sensor.light(5) | perm: n/a | flags: 0x00000012
+	on-change | maxDelay=0us | minDelay=0us | no batching | non-wakeUp | data-injection, 
+0x00000007) Goldfish Pressure sensor  | The Android Open Source Project | ver: 1 | type: android.sensor.pressure(6) | perm: n/a | flags: 0x00000010
+	continuous | minRate=2.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | data-injection, 
+0x00000008) Goldfish Humidity sensor  | The Android Open Source Project | ver: 1 | type: android.sensor.relative_humidity(12) | perm: n/a | flags: 0x00000012
+	on-change | maxDelay=0us | minDelay=0us | no batching | non-wakeUp | data-injection, 
+0x00000009) Goldfish 3-axis Magnetic field sensor (uncalibrated) | The Android Open Source Project | ver: 1 | type: android.sensor.magnetic_field_uncalibrated(14) | perm: n/a | flags: 0x00000010
+	continuous | minRate=2.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | data-injection, 
+0x0000000a) Goldfish 3-axis Gyroscope (uncalibrated) | The Android Open Source Project | ver: 1 | type: android.sensor.gyroscope_uncalibrated(16) | perm: n/a | flags: 0x00000010
+	continuous | minRate=2.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | data-injection, 
+0x00000011) Goldfish 3-axis Accelerometer Uncalibrated | The Android Open Source Project | ver: 1 | type: android.sensor.accelerometer_uncalibrated(35) | perm: n/a | flags: 0x00000050
+	continuous | minRate=2.00Hz | maxRate=100.00Hz | no batching | non-wakeUp | data-injection, has-additional-info, 
+0x5f636779) Corrected Gyroscope Sensor | AOSP            | ver: 1 | type: android.sensor.gyroscope(4) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x5f676172) Game Rotation Vector Sensor | AOSP            | ver: 3 | type: android.sensor.game_rotation_vector(15) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x5f676273) Gyroscope Bias (debug)    | AOSP            | ver: 1 | type: android.sensor.accelerometer(1) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x5f67656f) GeoMag Rotation Vector Sensor | AOSP            | ver: 3 | type: android.sensor.geomagnetic_rotation_vector(20) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x5f677276) Gravity Sensor            | AOSP            | ver: 3 | type: android.sensor.gravity(9) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x5f6c696e) Linear Acceleration Sensor | AOSP            | ver: 3 | type: android.sensor.linear_acceleration(10) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x5f726f76) Rotation Vector Sensor    | AOSP            | ver: 3 | type: android.sensor.rotation_vector(11) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=100.00Hz | no batching | non-wakeUp | 
+0x5f797072) Orientation Sensor        | AOSP            | ver: 1 | type: android.sensor.orientation(3) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=100.00Hz | no batching | non-wakeUp | 
+Fusion States:
+9-axis fusion disabled (0 clients), gyro-rate= 200.00Hz, q=< 0.677228, 1.82732e-06, 3.81427e-05, 0.735773 > (1), b=< 4.6864e-13, 3.12971e-13, 3.36969e-13 >
+game fusion(no mag) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0.486949, -0.470674, -0.511306, 0.529069 > (1), b=< 0, 0, 0 >
+geomag fusion (no gyro) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+Recent Sensor events:
+Rotation Vector Sensor: last 10 events
+	 1 (ts=410.895341098, wall=15:26:42.000) 0.68, 0.00, 0.00, 0.74, 0.00, 
+	 2 (ts=699.790116098, wall=15:31:30.895) 0.68, 0.00, 0.00, 0.74, 0.00, 
+	 3 (ts=699.810116098, wall=15:31:30.915) 0.68, 0.00, 0.00, 0.74, 0.00, 
+	 4 (ts=9182.505777098, wall=19:02:55.398) 0.68, 0.00, 0.00, 0.74, 0.00, 
+	 5 (ts=9182.525777098, wall=19:02:55.417) 0.68, -0.00, 0.00, 0.74, 0.00, 
+	 6 (ts=9182.545777098, wall=19:02:55.440) 0.68, -0.00, 0.00, 0.74, 0.00, 
+	 7 (ts=9182.565777098, wall=19:02:55.457) 0.68, -0.00, 0.00, 0.74, 0.00, 
+	 8 (ts=9182.585777098, wall=19:02:55.477) 0.68, -0.00, 0.00, 0.74, 0.00, 
+	 9 (ts=9182.605777098, wall=19:02:55.497) 0.68, 0.00, 0.00, 0.74, 0.00, 
+	10 (ts=9182.625777098, wall=19:02:55.517) 0.68, 0.00, 0.00, 0.74, 0.00, 
+Goldfish 3-axis Gyroscope (uncalibrated): last 10 events
+	 1 (ts=9782.386409159, wall=19:12:55.278) 0.00, 0.00, 0.00, 0.00, -0.00, -0.00, 
+	 2 (ts=9782.391409159, wall=19:12:55.282) 0.00, 0.00, 0.00, 0.00, -0.00, -0.00, 
+	 3 (ts=9782.396409159, wall=19:12:55.287) 0.00, 0.00, 0.00, -0.00, 0.00, 0.00, 
+	 4 (ts=9782.401409159, wall=19:12:55.292) 0.00, 0.00, 0.00, -0.00, 0.00, 0.00, 
+	 5 (ts=9782.406409159, wall=19:12:55.298) 0.00, 0.00, 0.00, -0.00, 0.00, 0.00, 
+	 6 (ts=9782.411409159, wall=19:12:55.303) 0.00, 0.00, 0.00, -0.00, 0.00, 0.00, 
+	 7 (ts=9782.416409159, wall=19:12:55.308) 0.00, 0.00, 0.00, -0.00, 0.00, 0.00, 
+	 8 (ts=9782.421409159, wall=19:12:55.313) 0.00, 0.00, 0.00, 0.00, -0.00, -0.00, 
+	 9 (ts=9782.426409159, wall=19:12:55.317) 0.00, 0.00, 0.00, 0.00, -0.00, -0.00, 
+	10 (ts=9782.431409159, wall=19:12:55.323) 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+Goldfish 3-axis Magnetic field sensor (uncalibrated): last 10 events
+	 1 (ts=8582.106463252, wall=18:52:54.998) 0.00, 9.88, -47.75, -0.00, 0.00, -0.00, 
+	 2 (ts=8582.126463252, wall=18:52:55.018) 0.00, 9.88, -47.75, 0.00, -0.00, -0.00, 
+	 3 (ts=8582.146463252, wall=18:52:55.039) 0.00, 9.88, -47.75, -0.00, 0.00, 0.00, 
+	 4 (ts=8582.166463252, wall=18:52:55.058) 0.00, 9.88, -47.75, -0.00, 0.00, -0.00, 
+	 5 (ts=8582.186463252, wall=18:52:55.078) 0.00, 9.88, -47.75, -0.00, -0.00, 0.00, 
+	 6 (ts=8582.206463252, wall=18:52:55.099) 0.00, 9.88, -47.75, 0.00, -0.00, 0.00, 
+	 7 (ts=8582.226463252, wall=18:52:55.118) 0.00, 9.88, -47.75, -0.00, 0.00, 0.00, 
+	 8 (ts=8582.246463252, wall=18:52:55.138) 0.00, 9.88, -47.75, -0.00, 0.00, 0.00, 
+	 9 (ts=8582.266463252, wall=18:52:55.157) 0.00, 9.88, -47.75, 0.00, 0.00, -0.00, 
+	10 (ts=8582.286463252, wall=18:52:55.179) 0.00, 9.88, -47.75, -0.00, -0.00, -0.00, 
+Goldfish Pressure sensor: last 10 events
+	 1 (ts=8581.356423794, wall=18:52:54.248) 1013.25, 0.00, 0.00, 
+	 2 (ts=8581.456423794, wall=18:52:54.348) 1013.25, 0.00, 0.00, 
+	 3 (ts=8581.556423794, wall=18:52:54.448) 1013.25, 0.00, 0.00, 
+	 4 (ts=8581.656423794, wall=18:52:54.548) 1013.25, 0.00, 0.00, 
+	 5 (ts=8581.756423794, wall=18:52:54.648) 1013.25, 0.00, 0.00, 
+	 6 (ts=8581.856423794, wall=18:52:54.748) 1013.25, 0.00, 0.00, 
+	 7 (ts=8581.956423794, wall=18:52:54.847) 1013.25, 0.00, 0.00, 
+	 8 (ts=8582.056423794, wall=18:52:54.948) 1013.25, 0.00, 0.00, 
+	 9 (ts=8582.156423794, wall=18:52:55.048) 1013.25, 0.00, 0.00, 
+	10 (ts=8582.256423794, wall=18:52:55.148) 1013.25, 0.00, 0.00, 
+Linear Acceleration Sensor: last 10 events
+	 1 (ts=699.810116098, wall=15:31:30.915) -0.00, 0.00, 0.00, 
+	 2 (ts=9182.465777098, wall=19:02:55.388) -0.00, 0.00, 0.00, 
+	 3 (ts=9182.485777098, wall=19:02:55.390) -0.00, 0.00, 0.00, 
+	 4 (ts=9182.505777098, wall=19:02:55.398) -0.00, 0.00, 0.00, 
+	 5 (ts=9182.525777098, wall=19:02:55.417) -0.00, 0.00, 0.00, 
+	 6 (ts=9182.545777098, wall=19:02:55.440) -0.00, 0.00, 0.00, 
+	 7 (ts=9182.565777098, wall=19:02:55.457) -0.00, 0.00, 0.00, 
+	 8 (ts=9182.585777098, wall=19:02:55.477) -0.00, 0.00, 0.00, 
+	 9 (ts=9182.605777098, wall=19:02:55.497) -0.00, 0.00, 0.00, 
+	10 (ts=9182.625777098, wall=19:02:55.517) -0.00, 0.00, 0.00, 
+Goldfish Proximity sensor: last 2 events
+	 1 (ts=87.235469166, wall=15:21:18.441) 1.00, 0.00, 0.00, 
+	 2 (ts=94.631676378, wall=15:21:25.746) 1.00, 0.00, 0.00, 
+Goldfish 3-axis Magnetic field sensor: last 10 events
+	 1 (ts=9182.585068832, wall=19:02:55.477) 0.00, 9.88, -47.75, 
+	 2 (ts=9182.595068832, wall=19:02:55.487) 0.00, 9.88, -47.75, 
+	 3 (ts=9182.605068832, wall=19:02:55.496) 0.00, 9.88, -47.75, 
+	 4 (ts=9182.615068832, wall=19:02:55.507) 0.00, 9.88, -47.75, 
+	 5 (ts=9182.625068832, wall=19:02:55.516) 0.00, 9.88, -47.75, 
+	 6 (ts=9182.635068832, wall=19:02:55.527) 0.00, 9.88, -47.75, 
+	 7 (ts=9782.393148576, wall=19:12:55.284) 0.00, 9.88, -47.75, 
+	 8 (ts=9782.403148576, wall=19:12:55.294) 0.00, 9.88, -47.75, 
+	 9 (ts=9782.413148576, wall=19:12:55.304) 0.00, 9.88, -47.75, 
+	10 (ts=9782.423148576, wall=19:12:55.314) 0.00, 9.88, -47.75, 
+Goldfish 3-axis Accelerometer: last 50 events
+	 1 (ts=10220.710941098, wall=19:20:13.602) 0.00, 9.78, 0.81, 
+	 2 (ts=10220.777608098, wall=19:20:13.671) 0.00, 9.78, 0.81, 
+	 3 (ts=10220.844275098, wall=19:20:13.740) 0.00, 9.78, 0.81, 
+	 4 (ts=10220.910942098, wall=19:20:13.822) 0.00, 9.78, 0.81, 
+	 5 (ts=10220.977609098, wall=19:20:13.869) 0.00, 9.78, 0.81, 
+	 6 (ts=10221.044276098, wall=19:20:13.937) 0.00, 9.78, 0.81, 
+	 7 (ts=10221.110943098, wall=19:20:14.004) 0.00, 9.78, 0.81, 
+	 8 (ts=10221.177610098, wall=19:20:14.070) 0.00, 9.78, 0.81, 
+	 9 (ts=10221.244277098, wall=19:20:14.136) 0.00, 9.78, 0.81, 
+	10 (ts=10221.310944098, wall=19:20:14.210) 0.00, 9.78, 0.81, 
+	11 (ts=10221.377611098, wall=19:20:14.270) 0.00, 9.78, 0.81, 
+	12 (ts=10221.444278098, wall=19:20:14.358) 0.00, 9.78, 0.81, 
+	13 (ts=10221.510945098, wall=19:20:14.407) 0.00, 9.78, 0.81, 
+	14 (ts=10221.577612098, wall=19:20:14.473) 0.00, 9.78, 0.81, 
+	15 (ts=10221.644279098, wall=19:20:14.537) 0.00, 9.78, 0.81, 
+	16 (ts=10221.710946098, wall=19:20:14.604) 0.00, 9.78, 0.81, 
+	17 (ts=10221.777613098, wall=19:20:14.673) 0.00, 9.78, 0.81, 
+	18 (ts=10221.844280098, wall=19:20:14.740) 0.00, 9.78, 0.81, 
+	19 (ts=10221.910947098, wall=19:20:14.803) 0.00, 9.78, 0.81, 
+	20 (ts=10221.977614098, wall=19:20:14.873) 0.00, 9.78, 0.81, 
+	21 (ts=10222.044281098, wall=19:20:14.942) 0.00, 9.78, 0.81, 
+	22 (ts=10222.110948098, wall=19:20:15.005) 0.00, 9.78, 0.81, 
+	23 (ts=10222.177615098, wall=19:20:15.073) 0.00, 9.78, 0.81, 
+	24 (ts=10222.244282098, wall=19:20:15.136) 0.00, 9.78, 0.81, 
+	25 (ts=10222.310949098, wall=19:20:15.209) 0.00, 9.78, 0.81, 
+	26 (ts=10222.377616098, wall=19:20:15.271) 0.00, 9.78, 0.81, 
+	27 (ts=10222.444283098, wall=19:20:15.337) 0.00, 9.78, 0.81, 
+	28 (ts=10222.510950098, wall=19:20:15.405) 0.00, 9.78, 0.81, 
+	29 (ts=10222.577617098, wall=19:20:15.474) 0.00, 9.78, 0.81, 
+	30 (ts=10222.644284098, wall=19:20:15.540) 0.00, 9.78, 0.81, 
+	31 (ts=10222.710951098, wall=19:20:15.605) 0.00, 9.78, 0.81, 
+	32 (ts=10222.777618098, wall=19:20:15.675) 0.00, 9.78, 0.81, 
+	33 (ts=10222.844285098, wall=19:20:15.740) 0.00, 9.78, 0.81, 
+	34 (ts=10222.910952098, wall=19:20:15.806) 0.00, 9.78, 0.81, 
+	35 (ts=10222.977619098, wall=19:20:15.871) 0.00, 9.78, 0.81, 
+	36 (ts=10223.044286098, wall=19:20:15.936) 0.00, 9.78, 0.81, 
+	37 (ts=10223.110953098, wall=19:20:16.003) 0.00, 9.78, 0.81, 
+	38 (ts=10223.177620098, wall=19:20:16.070) 0.00, 9.78, 0.81, 
+	39 (ts=10223.244287098, wall=19:20:16.140) 0.00, 9.78, 0.81, 
+	40 (ts=10223.310954098, wall=19:20:16.202) 0.00, 9.78, 0.81, 
+	41 (ts=10223.377621098, wall=19:20:16.272) 0.00, 9.78, 0.81, 
+	42 (ts=10223.444288098, wall=19:20:16.336) 0.00, 9.78, 0.81, 
+	43 (ts=10223.510955098, wall=19:20:16.408) 0.00, 9.78, 0.81, 
+	44 (ts=10223.577622098, wall=19:20:16.470) 0.00, 9.78, 0.81, 
+	45 (ts=10223.644289098, wall=19:20:16.540) 0.00, 9.78, 0.81, 
+	46 (ts=10223.710956098, wall=19:20:16.602) 0.00, 9.78, 0.81, 
+	47 (ts=10223.777623098, wall=19:20:16.673) 0.00, 9.78, 0.81, 
+	48 (ts=10223.844290098, wall=19:20:16.740) 0.00, 9.78, 0.81, 
+	49 (ts=10223.910957098, wall=19:20:16.805) 0.00, 9.78, 0.81, 
+	50 (ts=10223.977624098, wall=19:20:16.869) 0.00, 9.78, 0.81, 
+Active sensors:
+Goldfish 3-axis Accelerometer (handle=0x00000000, connections=3)
+Socket Buffer size = 39 events
+WakeLock Status: not held 
+Mode : NORMAL
+Sensor Privacy: disabled
+
+--- Client Listeners (17 registered) ---
+ Client 0 [PID: 1377, UID: 10207, IsFrozen: false]
+ Client 1 [PID: 1377, UID: 10207, IsFrozen: false]
+ Client 2 [PID: 1163, UID: 10192, IsFrozen: false]
+ Client 3 [PID: 1377, UID: 10207, IsFrozen: false]
+ Client 4 [PID: 1377, UID: 10207, IsFrozen: false]
+ Client 5 [PID: 1377, UID: 10207, IsFrozen: false]
+ Client 6 [PID: 1753, UID: 10150, IsFrozen: false]
+ Client 7 [PID: 1740, UID: 10156, IsFrozen: false]
+ Client 8 [PID: 2339, UID: 10157, IsFrozen: true]
+ Client 9 [PID: 1377, UID: 10207, IsFrozen: false]
+ Client 10 [PID: 1377, UID: 10207, IsFrozen: false]
+ Client 11 [PID: 1163, UID: 10192, IsFrozen: false]
+ Client 12 [PID: 10692, UID: 10207, IsFrozen: true]
+ Client 13 [PID: 1377, UID: 10207, IsFrozen: false]
+ Client 14 [PID: 11555, UID: 10233, IsFrozen: false]
+ Client 15 [PID: 1163, UID: 10192, IsFrozen: false]
+ Client 16 [PID: 1030, UID: 10190, IsFrozen: false]
+3 open event connections
+Connection Number: 0 
+	Operating Mode: NORMAL
+	 com.example.studentmanagement.sensor.StepCounterManager | WakeLockRefCount 0 | uid 10233 | cache size 0 | max cache size 984 | has sensor access: true
+	 Goldfish 3-axis Accelerometer 0x00000000 | first flush pending: false | pending flush events 0 
+		Session Start: 19:16:50 | Active Duration: 00:03:26 | Suspended Duration: 00:00:00
+Connection Number: 1 
+	Operating Mode: NORMAL
+	 com.android.server.power.FaceDownDetector | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 984 | has sensor access: true
+	 Goldfish 3-axis Accelerometer 0x00000000 | first flush pending: false | pending flush events 0 
+		Session Start: 15:20:23 | Active Duration: 02:49:51 | Suspended Duration: 00:00:00
+Connection Number: 2 
+	Operating Mode: NORMAL
+	 com.android.server.wm.WindowOrientationListener$AccelSensorJudge | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 984 | has sensor access: true
+	 Goldfish 3-axis Accelerometer 0x00000000 | first flush pending: false | pending flush events 0 
+		Session Start: 15:20:31 | Active Duration: 02:49:43 | Suspended Duration: 00:00:00
+0 open direct connections
+Previous Registrations:
+19:18:46 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+19:18:42 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+19:16:50 + 0x00000000 pid=11555 uid=10233 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.example.studentmanagement.sensor.StepCounterManager)
+19:16:50 - 0x00000000 pid=11555 uid=10233 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.example.studentmanagement.sensor.StepCounterManager)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+19:16:50 + 0x00000000 pid=11555 uid=10233 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.example.studentmanagement.sensor.StepCounterManager)
+19:12:55 - 0x5f6c696e pid=10692 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+19:12:55 - 0x5f726f76 pid=10692 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+19:12:55 + 0x5f726f76 pid=10692 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+19:12:55 + 0x5f6c696e pid=10692 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+19:11:51 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+19:11:50 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+19:05:12 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+19:05:12 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+19:02:55 - 0x5f6c696e pid=10692 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+19:02:55 - 0x5f726f76 pid=10692 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+19:02:55 + 0x5f726f76 pid=10692 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+19:02:55 + 0x5f6c696e pid=10692 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+18:58:33 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:58:33 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+18:52:56 - 0x5f6c696e pid=10692 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:52:56 - 0x5f726f76 pid=10692 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:52:55 + 0x5f726f76 pid=10692 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+18:52:55 + 0x5f6c696e pid=10692 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+18:52:55 - 0x00000002 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Magnetic field sensor, unknown_package_pid_1377)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:52:55 - 0x0000000a pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Gyroscope (uncalibrated), unknown_package_pid_1377)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:52:55 - 0x00000009 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Magnetic field sensor (uncalibrated), unknown_package_pid_1377)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:52:55 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, unknown_package_pid_1377)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:52:55 - 0x00000007 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish Pressure sensor   , com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:52:55 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:52:51 + 0x00000002 pid= 1377 uid=10207 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Magnetic field sensor, unknown_package_pid_1377)
+18:52:51 + 0x0000000a pid= 1377 uid=10207 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Gyroscope (uncalibrated), unknown_package_pid_1377)
+18:52:51 + 0x00000009 pid= 1377 uid=10207 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Magnetic field sensor (uncalibrated), unknown_package_pid_1377)
+18:52:51 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, unknown_package_pid_1377)
+18:52:51 + 0x00000007 pid= 1377 uid=10207 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish Pressure sensor   , com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+18:52:51 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+18:51:55 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:51:54 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+18:45:16 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:45:15 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+18:32:57 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:32:56 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+18:11:18 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:11:17 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+18:04:39 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+18:04:38 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+17:41:08 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+17:41:08 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+17:17:55 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+17:17:55 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+17:11:17 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+17:11:16 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+17:04:38 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+17:04:37 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+16:57:59 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+16:57:58 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+16:51:20 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+16:51:20 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+16:44:41 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+16:44:41 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+16:38:02 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+16:38:02 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+16:18:43 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+16:18:41 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+16:13:24 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+16:13:24 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+16:06:45 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+16:06:45 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+16:00:07 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+16:00:06 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+15:53:28 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:53:27 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+15:48:13 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:48:13 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+15:41:33 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:41:33 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+15:34:54 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:34:53 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+15:31:30 - 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:31:30 - 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:31:30 + 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+15:31:30 + 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+15:28:15 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:28:15 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+15:26:42 - 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:26:42 - 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:26:41 + 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+15:26:41 + 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+15:26:41 - 0x00000002 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Magnetic field sensor, unknown_package_pid_1377)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:26:41 - 0x0000000a pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Gyroscope (uncalibrated), unknown_package_pid_1377)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:26:41 - 0x00000009 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Magnetic field sensor (uncalibrated), unknown_package_pid_1377)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:26:41 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, unknown_package_pid_1377)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:26:41 + 0x00000002 pid= 1377 uid=10207 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Magnetic field sensor, unknown_package_pid_1377)
+15:26:41 + 0x0000000a pid= 1377 uid=10207 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Gyroscope (uncalibrated), unknown_package_pid_1377)
+15:26:41 + 0x00000009 pid= 1377 uid=10207 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Magnetic field sensor (uncalibrated), unknown_package_pid_1377)
+15:26:41 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, unknown_package_pid_1377)
+15:26:41 - 0x00000007 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish Pressure sensor   , com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:26:41 - 0x00000000 pid= 1377 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:26:41 + 0x00000000 pid= 1377 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+15:26:36 + 0x00000007 pid= 1377 uid=10207 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish Pressure sensor   , com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+15:22:32 - 0x00000000 pid= 1163 uid=10192 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, android.view.OrientationEventListener)
+    Final Duration: 00:00:05 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:22:26 + 0x00000000 pid= 1163 uid=10192 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, android.view.OrientationEventListener)
+15:21:37 - 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:21:37 - 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:21:37 + 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+15:21:37 + 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+15:21:36 - 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:21:36 - 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:21:36 + 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+15:21:36 + 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+15:21:30 - 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:05 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:21:30 - 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:21:26 - 0x00000005 pid= 1030 uid=10190 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish Proximity sensor  , com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:21:25 + 0x00000005 pid= 1030 uid=10190 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish Proximity sensor  , com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+15:21:25 + 0x5f726f76 pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Rotation Vector Sensor     , com.google.ccc.abuse.droidguard.events.b)
+15:21:25 + 0x5f6c696e pid= 3048 uid=10207 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Linear Acceleration Sensor , com.google.ccc.abuse.droidguard.events.b)
+15:21:18 - 0x00000005 pid= 1030 uid=10190 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (Goldfish Proximity sensor  , com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+15:21:18 + 0x00000005 pid= 1030 uid=10190 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (Goldfish Proximity sensor  , com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+15:20:31 + 0x00000000 pid=  669 uid= 1000 samplingPeriod=   66667us batchingPeriod=  100000us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.android.server.wm.WindowOrientationListener$AccelSensorJudge)
+15:20:23 + 0x00000000 pid=  669 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (Goldfish 3-axis Accelerometer, com.android.server.power.FaceDownDetector)

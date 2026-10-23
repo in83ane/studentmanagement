@@ -1,0 +1,12 @@
+2026-10-15: docker compose exec -T api python auth_smoke_test.py
+PASS: all five student endpoints reject missing tokens (401)
+PASS: incorrect password rejected (401)
+PASS: login and protected request with Bearer [REDACTED] (200)
+PASS: altered signature and expired token rejected (401)
+PASS: removing token from next request returns 401
+PASS: authenticated CRUD and cleanup
+
+2026-10-15: docker compose exec -T api python sync_smoke_test.py
+PASS: 4 concurrent retries produce one PostgreSQL row and the same serverId
+PASS: same client_id with changed payload returns 409 without overwriting
+PASS: cleanup complete; no JWT values logged

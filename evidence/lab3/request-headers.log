@@ -1,0 +1,31 @@
+--------- beginning of main
+10-15 15:12:08.340  8439  8653 D Lab3Http: --> POST http://10.0.2.2:8000/token
+10-15 15:12:08.340  8439  8653 D Lab3Http: Content-Type: application/x-www-form-urlencoded
+10-15 15:12:08.340  8439  8653 D Lab3Http: Content-Length: 42
+10-15 15:12:08.340  8439  8653 D Lab3Http: --> END POST
+10-15 15:12:09.371  8439  8653 D Lab3Http: <-- 401 Unauthorized http://10.0.2.2:8000/token (1030ms)
+10-15 15:12:09.371  8439  8653 D Lab3Http: date: Thu, 15 Oct 2026 08:12:08 GMT
+10-15 15:12:09.371  8439  8653 D Lab3Http: server: uvicorn
+10-15 15:12:09.371  8439  8653 D Lab3Http: www-authenticate: Bearer
+10-15 15:12:09.371  8439  8653 D Lab3Http: content-length: 49
+10-15 15:12:09.371  8439  8653 D Lab3Http: content-type: application/json
+10-15 15:12:09.371  8439  8653 D Lab3Http: <-- END HTTP
+10-15 15:12:58.627  8439  8653 D Lab3Http: --> POST http://10.0.2.2:8000/token
+10-15 15:12:58.634  8439  8653 D Lab3Http: Content-Type: application/x-www-form-urlencoded
+10-15 15:12:58.634  8439  8653 D Lab3Http: Content-Length: 42
+10-15 15:12:58.634  8439  8653 D Lab3Http: --> END POST
+10-15 15:12:59.637  8439  8653 D Lab3Http: <-- 200 OK http://10.0.2.2:8000/token (1002ms)
+10-15 15:12:59.637  8439  8653 D Lab3Http: date: Thu, 15 Oct 2026 08:12:58 GMT
+10-15 15:12:59.637  8439  8653 D Lab3Http: server: uvicorn
+10-15 15:12:59.637  8439  8653 D Lab3Http: content-length: 193
+10-15 15:12:59.637  8439  8653 D Lab3Http: content-type: application/json
+10-15 15:12:59.637  8439  8653 D Lab3Http: <-- END HTTP
+10-15 15:12:59.705  8439  8653 D Lab3Http: --> GET http://10.0.2.2:8000/students
+10-15 15:12:59.705  8439  8653 D Lab3Http: Authorization: ██
+10-15 15:12:59.705  8439  8653 D Lab3Http: --> END GET
+10-15 15:12:59.824  8439  8653 D Lab3Http: <-- 200 OK http://10.0.2.2:8000/students (118ms)
+10-15 15:12:59.824  8439  8653 D Lab3Http: date: Thu, 15 Oct 2026 08:12:59 GMT
+10-15 15:12:59.824  8439  8653 D Lab3Http: server: uvicorn
+10-15 15:12:59.824  8439  8653 D Lab3Http: content-length: 333
+10-15 15:12:59.824  8439  8653 D Lab3Http: content-type: application/json
+10-15 15:12:59.825  8439  8653 D Lab3Http: <-- END HTTP

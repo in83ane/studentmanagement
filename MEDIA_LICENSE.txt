@@ -1,0 +1,1 @@
+music.mp3, campus.mp4, loading.json and walking.json were generated specifically for this coursework. Original synthesized music, vector campus animation and Lottie shapes. No third-party media used. Reuse permitted for this project.

@@ -1,0 +1,36 @@
+Gradle testDebugUnitTest: BUILD SUCCESSFUL
+
+com.example.studentmanagement.StudentRepositoryTest
+Tests: 6 | Failures: 0 | Errors: 0 | Skipped: 0
+
+  PASS failureRetriesSameUuidAfterLostResponseWithoutDuplicate
+
+  PASS concurrentSyncIsSerialized
+
+  PASS refreshNeverDeletesPendingAndPreservesLocalIdentity
+
+  PASS cancellationAnd401PropagateWithoutErasingQueue
+
+  PASS addOfflineWritesRoomWithoutNetworkAndFlowEmits
+
+  PASS syncRetainsLocalIdAndRepeatDoesNotPostAgain
+
+com.example.studentmanagement.StudentViewModelTest
+Tests: 1 | Failures: 0 | Errors: 0 | Skipped: 0
+
+  PASS stateReflectsUseCaseAndSearchThenSyncResult
+
+com.example.studentmanagement.UseCaseTest
+Tests: 6 | Failures: 0 | Errors: 0 | Skipped: 0
+
+  PASS blankInputDoesNotWriteRepository
+
+  PASS addTrimsInput
+
+  PASS syncReturnsCountsAndCallsRepositoryOnce
+
+  PASS getMissingStudentReturnsNull
+
+  PASS getStudentsReflectsRepositoryUpdates
+
+  PASS oversizedInputDoesNotWriteRepository

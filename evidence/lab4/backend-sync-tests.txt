@@ -1,0 +1,3 @@
+PASS: 4 concurrent retries produce one PostgreSQL row and the same serverId
+PASS: same client_id with changed payload returns 409 without overwriting
+PASS: cleanup complete; no JWT values logged

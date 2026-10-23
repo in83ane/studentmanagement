@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.studentmanagement.UseCaseTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-23T20:30:38" hostname="ronnakorns-MacBook-Air.local" time="0.021">
+  <properties/>
+  <testcase name="blankInputDoesNotWriteRepository" classname="com.example.studentmanagement.UseCaseTest" time="0.005"/>
+  <testcase name="addTrimsInput" classname="com.example.studentmanagement.UseCaseTest" time="0.005"/>
+  <testcase name="syncReturnsCountsAndCallsRepositoryOnce" classname="com.example.studentmanagement.UseCaseTest" time="0.002"/>
+  <testcase name="getMissingStudentReturnsNull" classname="com.example.studentmanagement.UseCaseTest" time="0.002"/>
+  <testcase name="getStudentsReflectsRepositoryUpdates" classname="com.example.studentmanagement.UseCaseTest" time="0.004"/>
+  <testcase name="oversizedInputDoesNotWriteRepository" classname="com.example.studentmanagement.UseCaseTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

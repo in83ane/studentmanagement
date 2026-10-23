@@ -1,0 +1,14 @@
+--------- beginning of main
+10-15 18:43:55.383  9751  9751 I StudentSyncWorker: REGISTER periodic interval=15min network=CONNECTED
+10-15 18:44:36.730  9751  9751 I StudentSyncWorker: REGISTER periodic interval=15min network=CONNECTED
+10-15 18:47:00.941  9751  9751 I StudentSyncWorker: REGISTER periodic interval=15min network=CONNECTED
+10-15 18:47:32.368  9751  9751 I StudentSyncWorker: ENQUEUE one-time id=5c6b76fe-d14c-4c21-afce-790952d04b3b network=CONNECTED
+10-15 18:47:50.928  9751 10335 I StudentSyncWorker: START id=5c6b76fe-d14c-4c21-afce-790952d04b3b attempt=0
+10-15 18:47:51.318  9751 10335 I StudentSyncWorker: SUCCESS synced=1
+10-15 18:50:06.980  9751  9751 I StudentSyncWorker: ENQUEUE one-time id=9726246e-5c1f-4e88-b246-46422c407df1 network=CONNECTED
+10-15 18:50:07.388  9751 10335 I StudentSyncWorker: START id=9726246e-5c1f-4e88-b246-46422c407df1 attempt=0
+10-15 18:50:08.019  9751 10335 I StudentSyncWorker: RETRY synced=0 failed=1
+10-15 18:50:38.064  9751 10335 I StudentSyncWorker: START id=9726246e-5c1f-4e88-b246-46422c407df1 attempt=1
+10-15 18:50:38.517  9751 10335 I StudentSyncWorker: RETRY synced=0 failed=1
+10-15 18:51:38.561  9751 10335 I StudentSyncWorker: START id=9726246e-5c1f-4e88-b246-46422c407df1 attempt=2
+10-15 18:51:39.523  9751 10335 I StudentSyncWorker: SUCCESS synced=1

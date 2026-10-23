@@ -1,0 +1,6 @@
+PASS: all five student endpoints reject missing tokens (401)
+PASS: incorrect password rejected (401)
+PASS: login and protected request with Bearer [REDACTED] (200)
+PASS: altered signature and expired token rejected (401)
+PASS: removing token from next request returns 401
+PASS: authenticated CRUD and cleanup

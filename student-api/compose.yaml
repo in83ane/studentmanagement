@@ -1,0 +1,30 @@
+name: student-management-lab
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: student_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: student_lab
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - student_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/01-students.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d student_db"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  api:
+    build: .
+    environment:
+      JWT_SECRET: ${JWT_SECRET:?Create .env with JWT_SECRET first}
+      DATABASE_URL: postgresql+psycopg2://postgres:student_lab@db:5432/student_db
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  student_data:

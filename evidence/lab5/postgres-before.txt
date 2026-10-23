@@ -1,0 +1,4 @@
+ id | student_code | name | major | client_id 
+----+--------------+------+-------+-----------
+(0 rows)
+

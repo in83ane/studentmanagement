@@ -16,3 +16,9 @@ local.properties
 
 # App module specific
 app/build/
+
+# Python backend
+.venv/
+__pycache__/
+.pytest_cache/
+.env
